@@ -1,0 +1,20 @@
+helm:
+  parameters:
+  - name: name
+    value: development-api
+    forcestring: false
+  - name: namespace
+    value: dev
+    forcestring: false
+  - name: image.repository
+    value: 711063385483.dkr.ecr.ap-south-2.amazonaws.com/api-dev
+    forcestring: false
+  - name: image.tag
+    value: 7f197d5-8
+    forcestring: true
+  - name: replicaCount
+    value: "1"
+    forcestring: false
+  - name: image.name
+    value: 711063385483.dkr.ecr.ap-south-2.amazonaws.com/api-dev
+    forcestring: true

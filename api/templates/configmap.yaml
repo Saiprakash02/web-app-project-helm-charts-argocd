@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Values.configmap.name }}
+  namespace: {{ .Values.namespace }}
+data:
+  PGDATABASE: {{ .Values.configmap.pgdatabase | quote }}
+  PGUSER: {{ .Values.configmap.pguser | quote }}
+  PGPASSWORD: {{ .Values.configmap.pgpassword | quote }}
